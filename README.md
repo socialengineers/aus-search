@@ -25,7 +25,7 @@ To run the provided scripts you will need to have about 30GB of free space and a
    sudo sysctl -w vm.max_map_count=262144
    sudo sysctl -w fs.file-max=65536
    ```
-   You can then re-run the docker-compose command above.
+   You should then update your /etc/sysctl.conf file (or /etc/sysctl.d/) with these settings so the change survives reboot - then re-run the docker-compose command above.
 2. **Install the required NodeJS packages**
    
    Run the following command
